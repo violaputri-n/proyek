@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Rambu Resto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf4;
+    }
+
+    .navbar {
+      background-color: #6B432E;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .btn-profile {
+      background-color: #FDC500;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 6px 14px;
+    }
+
+    h2.title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 120px;
+      color: #6b432e;
+    }
+
+    p.subtitle {
+      font-size: 24px;
+      color: #8b6f47;
+    }
+
+    .menu-item {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .menu-price {
+      color: #d56ffd;
+      font-size: 18px;
+    }
+
+    .menu-discount {
+      text-decoration: line-through;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .footer {
+      background-color: #6B432E;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/rrResto.png" height="45" alt="Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">DESCRIPTION</a></li>
+      </ul>
+
+      <!-- Tambahan ikon keranjang -->
+      <a href="cart.php" class="btn btn-outline-light me-3" title="Keranjang">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zM3.14 6l1.25 6h7.22l1.25-6H3.14z"/>
+          <path d="M5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+      </a>
+
+      <a href="profile.html" class="btn btn-profile">PROFILE</a>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Content -->
+  <div class="container">
+    <div class="text-center">
+      <h2 class="title">MENU RAMBU RESTO</h2>
+      <p class="subtitle">- All Menu -</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Menu Items (6 total) -->
+      <div class="col-md-4 mb-4">
+        <div class="menu-item text-center">
+          <img src="img/crmg kcng.jfif" alt="Buryam" class="img-fluid rounded" />
+          <h3 class="menu-title">BURYAM</h3>
+          <p><span class="menu-price">Rp15.000</span><br /><span class="menu-discount">Rp20.900</span></p>
+         <a href="pesan.html?menu=Bubur Ayam&harga=15000" class="btn btn-primary">Pesan</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="menu-item text-center">
+          <img src="img/crmg kcng.jfif" alt="Sate Ayam" class="img-fluid rounded" />
+          <h3 class="menu-title">SATE AYAM</h3>
+          <p><span class="menu-price">Rp40.000</span><br /><span class="menu-discount">Rp52.000</span></p>
+          <a href="pesan.html?menu=Sate ayam &harga=40000" class="btn btn-primary">Pesan</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="menu-item text-center">
+          <img src="img/crmg kcng.jfif" alt="Nasi Goreng" class="img-fluid rounded" />
+          <h3 class="menu-title">NASI GORENG</h3>
+          <p><span class="menu-price">Rp32.000</span><br /><span class="menu-discount">Rp42.000</span></p>
+          <a href="pesan.html?menu=Nasi%20Goreng&harga=32000" class="btn btn-primary">Pesan</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="menu-item text-center">
+          <img src="img/crmg kcng.jfif" alt="Mie Goreng" class="img-fluid rounded" />
+          <h3 class="menu-title">MIE GORENG</h3>
+          <p><span class="menu-price">Rp30.000</span><br /><span class="menu-discount">Rp38.000</span></p>
+          <a href="pesan.html?menu=mie goreng&harga=30000" class="btn btn-primary">Pesan</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="menu-item text-center">
+          <img src="img/crmg kcng.jfif" alt="Ayam Geprek" class="img-fluid rounded" />
+          <h3 class="menu-title">AYAM GEPREK</h3>
+          <p><span class="menu-price">Rp34.000</span><br /><span class="menu-discount">Rp45.000</span></p>
+          <a href="pesan.html?menu=ayam geprek&harga=15000" class="btn btn-primary">Pesan</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="menu-item text-center">
+          <img src="img/patin (2).jpg" alt="Ikan Bakar" class="img-fluid rounded" />
+          <h3 class="menu-title">IKAN BAKAR</h3>
+          <p><span class="menu-price">Rp48.000</span><br /><span class="menu-discount">Rp59.000</span></p>
+         <a href="pesan.html?menu=Ikan bakar&harga=15000" class="btn btn-primary">Pesan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer mt-5 pt-4 pb-4">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-md-4 mb-3">
+          <img src="img/logo_sambara-removebg-preview.png" width="60%" alt="" />
+        </div>
+        <div class="col-md-5">
+          <p>Perumahan Jl. Rambu Raden Gunawan,</p>
+          <p>Kepayang, Kec. Rajabasa, Kota Bandar Lampung</p>
+          <p>15143</p>
+          <p>Buka : Senin - Minggu</p>
+          <p>Jam : 10.00 - 22.00</p>
+          <p>Telp: (022) 20456465</p>
+          <p>Email: info@ramburesto.com</p>
+        </div>
+        <div class="col-md-3 text-md-end">
+          <p>© 2024 | ramburestoofficial.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
